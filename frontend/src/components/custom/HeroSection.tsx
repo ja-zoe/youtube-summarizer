@@ -47,7 +47,6 @@ const HeroSection: FC<HeroSectionProps> = ({ data }) => {
         <Link
           className="mt-8 inline-flex items-center justify-center px-6 py-3 text-base font-medium text-black bg-white rounded-md shadow hover:bg-gray-100"
           href={link.url as any}
-          target="_blank"
         >
           {link.text}
         </Link>

@@ -37,7 +37,7 @@ const Footer: FC<FooterProps> = ({ data }) => {
         <div className="flex items-center space-x-4">
           {socialLink.map((link) => {
             return (
-              <Link className="text-white hover:text-gray-300" href={link.url}>
+              <Link key={link.id} className="text-white hover:text-gray-300" href={link.url}>
                 {selectSocialIcon(link.url)}
                 <span className="sr-only">Visit us at {link.text}</span>
               </Link>
